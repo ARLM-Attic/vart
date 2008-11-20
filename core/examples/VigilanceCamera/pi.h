@@ -1,0 +1,13 @@
+#ifndef PI_H
+#define PI_H
+const double PIV2_D    = 6.283185307179586476925286766559;
+const double PI_DOUBLE = 3.1415926535897932384626433832795;
+const double PIS2_D    = 1.5707963267948966192313216916398;
+const double PIS4_D    = 0.78539816339744830961566084581988;
+const double RADIANOS_GRAUS = 57.295779513; // fator de conversao de radianos para graus
+const double GRAUS_RADIANOS = 0.017453293;  // fator de conversao de graus para radianos
+const float  PI_FLOAT  = 3.1415926535897932384626433832795;
+const float  PIS2_F    = 1.5707963267948966192313216916398;
+const float  PIS4_F    = 0.78539816339744830961566084581988;
+const float  PIV2_F    = 6.283185307179586476925286766559;
+#endif

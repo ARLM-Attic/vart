@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE vpat SYSTEM "vpat.dtd">
+
+<vpat>
+<body description="Joe" file_name="joe.xml" >
+   <joint description="root" parent="null" type="uniaxial">
+      <dof description="pronation">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <axis x="0.0" y="0.0" z="1.0"/>
+         <range min="0.0" max="1.0"/>
+         <comfort_range min="0.2" max="0.8" rest="0.0"/>
+         <evoluta>
+            <ctrl_point x="0.0" y="0.0" z="0.0"/>
+            <ctrl_point x="0.2" y="0.0" z="0.0"/>
+            <ctrl_point x="0.4" y="0.0" z="0.0"/>
+            <ctrl_point x="0.6" y="0.0" z="0.0"/>
+         </evoluta>
+      </dof>
+      <shape description="Left Ulna" file_name="lulna.iv">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+   </joint>
+   <joint description="pulse" parent="root" type="biaxial">
+         <dof description="flexion">
+            <position x="0.7" y="-9.65" z="1.6"/>
+            <axis x="0.0" y="0.0" z="1.0"/>
+            <range min="-0.7" max="0.7"/>
+            <comfort_range min="-0.3" max="0.4" rest="0.0"/>
+         </dof>
+         <dof description="adduction">
+            <position x="0.0" y="0.5" z="0.0"/>
+            <axis x="1.0" y="0.0" z="0.0"/>
+            <range min="-0.4" max="0.4"/>
+            <comfort_range min="-0.8" max="1.0" rest="0.0"/>
+            <modifier>
+    						<relation dof="flexion">
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="1.0" y="-0.4" z="0.0"/>
+                   <ctrl_point x="2.0" y="-0.4" z="0.0"/>
+                   <ctrl_point x="3.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="1.0" y="0.4" z="0.0"/>
+                   <ctrl_point x="2.0" y="0.4" z="0.0"/>
+                   <ctrl_point x="3.0" y="0.0" z="0.0"/>
+                </relation>
+            </modifier>
+         </dof>
+         <shape description="Left Hand" file_name="lhand.iv">
+            <position x="0.0" y="0.0" z="0.0"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+   </joint>
+</body>
+</vpat>

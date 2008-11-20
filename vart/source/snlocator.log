@@ -1,0 +1,3 @@
+Jun 17, 2008 - Bruno de Oliveira Schneider
+- File created because I needed a way to traverse the scene graph, stopping
+  when some node was found.

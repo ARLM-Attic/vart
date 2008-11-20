@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE vpat SYSTEM "vpat.dtd">
+
+<vpat>
+<body description="Joelho" file_name="valida3.xml" >
+   <joint description="root" parent="null" type="uniaxial">
+      <dof description="no_move">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <axis x="1.0" y="0.0" z="0.0"/>
+         <range min="0.0" max="0.0"/>
+         <comfort_range min="0.0" max="0.0" rest="0.0"/>
+      </dof>
+      <shape description="Femur" file_name="femur_r.iv">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+   </joint>
+   <joint description="femur_tibia" parent="root" type="uniaxial">
+         <dof description="flexionK">
+            <position x="168.86" y="74.04" z="-60.23"/>
+            <axis x="0.0" y="0.0" z="1.0"/>
+            <range min="-0.26" max="1.8"/>
+            <evoluta>
+               <ctrl_point x="-2.5" y="0.5" z="0.0"/>
+               <ctrl_point x="-1.5" y="0.0" z="0.0"/>
+               <ctrl_point x="4.0" y="0.0" z="0.0"/>
+               <ctrl_point x="4.5" y="-0.5" z="0.0"/>
+            </evoluta>
+         </dof>
+         <dof description="twistK">
+            <position x="0.0" y="0.0" z="0.0"/>
+            <axis x="0.0" y="1.0" z="0.0"/>
+            <range min="-0.281" max="0.281"/>
+            <modifier>
+    						<relation dof="flexionK">
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="1.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="2.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="3.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="0.0" y="0.28" z="0.0"/>
+                   <ctrl_point x="0.0" y="0.28" z="0.0"/>
+                   <ctrl_point x="3.0" y="0.28" z="0.0"/>
+                </relation>
+            </modifier>
+         </dof>
+         <shape description="Tibia" file_name="tibia_r.iv">
+            <position x="-168.86" y="-74.04" z="60.23"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+         <shape description="Fibula" file_name="fibula_r.iv">
+            <position x="-168.86" y="-74.04" z="60.23"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+   </joint>
+   <joint description="femur_min" parent="femur_tibia" type="uniaxial">
+      <dof description="flexionH">
+         <position x="0.0" y="4.0" z="0.0"/>
+         <axis x="0.0" y="0.0" z="1.0"/>
+         <range min="0.0" max="0.0"/>
+         <evoluta>
+            <ctrl_point x="-5.0" y="0.0" z="0.0"/>
+            <ctrl_point x="-2.0" y="0.0" z="0.0"/>
+            <ctrl_point x="1.0" y="0.0" z="0.0"/>
+            <ctrl_point x="3.0" y="0.0" z="0.0"/>
+         </evoluta>
+      </dof>
+      <shape description="Menisco Lateral" file_name="Minuscus_lat_r.iv">
+         <position x="-168.86" y="-78.04" z="60.23"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+      <shape description="Menisco Medial" file_name="Minuscus_med_r.iv">
+         <position x="-168.86" y="-78.04" z="60.23"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+   </joint>
+   <joint description="femur_patella" parent="femur_min" type="uniaxial">
+         <dof description="flexionA">
+            <position x="-50.0" y="0.0" z="0.0"/>
+            <axis x="0.0" y="0.0" z="1.0"/>
+            <range min="0.0" max="-0.8"/>
+            <evoluta>
+               <ctrl_point x="60.0" y="20.0" z="-2.0"/>
+               <ctrl_point x="65.0" y="20.0" z="-4.0"/>
+               <ctrl_point x="70.0" y="0.0" z="6.0"/>
+               <ctrl_point x="75.0" y="-15.0" z="6.0"/>
+            </evoluta>
+         </dof>
+         <shape description="Patela" file_name="patella_r.iv">
+            <position x="-167.00" y="-74.04" z="60.23"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+   </joint>
+</body>
+
+<movement body_name="john" cycle="on" delta_t="0.01" time_err="0.0001">
+
+  <!-- set start position -->
+  <motion joint_name="femur_tibia" t0="-0.9" tf="0.0" type="ADDUCT" parameter="0.5"/>
+
+  <!-- set motion -->
+  <motion joint_name="femur_tibia" t0="0.0" tf="1.2" type="FLEX" parameter="0.0"/>
+  <motion joint_name="femur_tibia" t0="1.3" tf="2.5" type="FLEX" parameter="1.0"/>
+  <motion joint_name="femur_min" t0="0.0" tf="1.2" type="FLEX" parameter="0.0"/>
+  <motion joint_name="femur_min" t0="1.3" tf="2.5" type="FLEX" parameter="1.0"/>
+  <motion joint_name="femur_patella" t0="0.0" tf="1.2" type="FLEX" parameter="0.0"/>
+  <motion joint_name="femur_patella" t0="1.3" tf="2.5" type="FLEX" parameter="1.0"/>
+</movement>
+</vpat>

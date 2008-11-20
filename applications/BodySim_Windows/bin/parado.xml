@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE vpat SYSTEM "vpat.dtd">
+
+<vpat>
+<body description="John" file_name="john.xml" >
+   <joint description="root" parent="null" type="uniaxial">
+      <dof description="flexionR">
+         <position x="3.15" y="-8.2" z="-0.7"/>
+         <axis x="1.0" y="0.0" z="0.0"/>
+         <range min="-1.8" max="1.0"/>
+         <comfort_range min="0.2" max="0.8" rest="0.0"/>
+      </dof>
+      <shape description="Bacia" file_name="pelvis.iv">
+         <position x="-3.15" y="8.2" z="0.7"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+   </joint>
+   <joint description="hip" parent="root" type="uniaxial">
+      <dof description="flexionH">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <axis x="1.0" y="0.0" z="0.0"/>
+         <range min="0.0" max="0.0"/>
+         <comfort_range min="0.2" max="0.8" rest="0.0"/>
+      </dof>
+      <shape description="Femur" file_name="lfemur.iv">
+         <position x="-3.15" y="8.2" z="0.7"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+   </joint>
+   <joint description="knee" parent="hip" type="biaxial">
+         <dof description="flexionK">
+            <position x="-2.48" y="17.05" z="0.0"/>
+            <axis x="1.0" y="0.0" z="0.0"/>
+            <range min="0.0" max="2.2"/>
+            <comfort_range min="-0.3" max="0.4" rest="0.0"/>
+            <evoluta>
+               <ctrl_point x="0.0" y="0.0" z="0.0"/>
+               <ctrl_point x="-0.3" y="-0.3" z="0.0"/>
+               <ctrl_point x="-0.2" y="-0.8" z="0.0"/>
+               <ctrl_point x="0.1" y="-1.6" z="-0.5"/>
+            </evoluta>
+         </dof>
+         <dof description="twistK">
+            <position x="0.0" y="0.0" z="0.0"/>
+            <axis x="0.0" y="1.0" z="0.0"/>
+            <range min="0.0" max="0.28"/>
+            <comfort_range min="-0.8" max="1.0" rest="0.0"/>
+            <modifier>
+    						<relation dof="flexionK">
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="1.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="2.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="3.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="0.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="8.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="10.0" y="0.0" z="0.0"/>
+                   <ctrl_point x="10.0" y="0.28" z="0.0"/>
+                </relation>
+            </modifier>
+         </dof>
+         <shape description="Tibia" file_name="ltibia.iv">
+            <position x="-3.15" y="25.25" z="3.18"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+         <shape description="Patela" file_name="lpatella.iv">
+            <position x="-3.15" y="25.25" z="3.18"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+         <shape description="Fibula" file_name="lfibula.iv">
+            <position x="-3.15" y="25.25" z="3.18"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+   </joint>
+   <joint description="ankle" parent="knee" type="biaxial">
+         <dof description="flexionA">
+            <position x="-1.0" y="15.25" z="-0.15"/>
+            <axis x="1.0" y="0.0" z="0.0"/>
+            <range min="0.0" max="1.0"/>
+            <comfort_range min="-0.3" max="0.4" rest="0.0"/>
+         </dof>
+         <dof description="twistA">
+            <position x="0.0" y="0.0" z="0.0"/>
+            <axis x="0.0" y="0.0" z="1.0"/>
+            <range min="-0.5" max="0.2"/>
+            <comfort_range min="-0.8" max="1.0" rest="0.0"/>
+         </dof>
+         <shape description="Foot" file_name="lfoot.iv">
+            <position x="-3.0" y="40.5" z="4.18"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>
+   </joint>			
+</body>
+<movement body_name="john" cycle="off" delta_t="0.05" time_err="0.0001">
+  <motion joint_name="knee" t0="0.0" tf="1.0" type="FLEX" parameter="0.4"/>
+  <motion joint_name="ankle" t0="0.0" tf="1.0" type="FLEX" parameter="0.5"/>
+  <motion joint_name="ankle" t0="0.0" tf="1.0" type="ADDUCT" parameter="0.5"/>
+</movement>
+</vpat>

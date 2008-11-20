@@ -1,0 +1,189 @@
+<!ELEMENT scene (camera*, node+)>
+
+<!ELEMENT camera (position,target,up_vector)>
+
+<!ELEMENT position EMPTY>
+
+<!ELEMENT target EMPTY>
+
+<!ELEMENT up_vector EMPTY>
+
+<!ELEMENT node ((bezier|sphere|cylinder|meshobject|directionallight|spotlight|pointlight|transform|joint), node*)>
+
+<!ELEMENT bezier (ponto1, ponto2, ponto3, ponto4)>
+
+<!ELEMENT ponto1 EMPTY>
+
+<!ELEMENT ponto2 EMPTY>
+
+<!ELEMENT ponto3 EMPTY>
+
+<!ELEMENT ponto4 EMPTY>
+
+<!ELEMENT sphere (radius, material)>
+
+<!ELEMENT cylinder (radius, height, material)>
+
+<!ELEMENT height EMPTY>
+
+<!ELEMENT radius EMPTY>
+
+<!ELEMENT material EMPTY>
+
+<!ELEMENT meshobject (material?)>
+
+<!ELEMENT directionallight (intensity, ambientIntensity, color, enabled, position)>
+
+<!ELEMENT pointlight (intensity, ambientIntensity, color, enabled, position, attenuation)>
+
+<!ELEMENT spotlight (intensity, ambientIntensity, color, enabled, position, attenuation, beam_Width, cut_Off_Angle)>
+
+<!ELEMENT intensity EMPTY>
+
+<!ELEMENT ambientIntensity EMPTY>
+
+<!ELEMENT color EMPTY>
+
+<!ELEMENT enabled EMPTY>
+
+<!ELEMENT attenuation EMPTY>
+
+<!ELEMENT beam_Width EMPTY>
+
+<!ELEMENT cut_Off_Angle EMPTY>
+
+<!ELEMENT transform (translation|scale|rotation|matrix)>
+
+<!ELEMENT translation EMPTY>
+
+<!ELEMENT scale EMPTY>
+
+<!ELEMENT rotation EMPTY>
+
+<!ELEMENT matrix EMPTY>
+
+<!ELEMENT joint (dof+)>
+
+<!ELEMENT dof ( position, axis, range )>
+
+<!ELEMENT axis EMPTY>
+
+<!ELEMENT range EMPTY>
+
+<!ATTLIST scene description CDATA #REQUIRED>
+
+<!ATTLIST camera description CDATA #REQUIRED
+                            type CDATA #REQUIRED>
+
+<!ATTLIST joint description CDATA #REQUIRED
+                type (biaxial|polyaxial|uniaxial) #REQUIRED >
+
+<!ATTLIST dof description CDATA #REQUIRED >
+
+<!ATTLIST position  x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST target    x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST up_vector  x CDATA #REQUIRED
+                     y CDATA #REQUIRED
+                     z CDATA #REQUIRED >
+
+<!ATTLIST translation x CDATA #REQUIRED
+                      y CDATA #REQUIRED
+                      z CDATA #REQUIRED >
+
+<!ATTLIST scale x CDATA #REQUIRED
+                y CDATA #REQUIRED
+                z CDATA #REQUIRED >
+
+<!ATTLIST rotation axis CDATA #REQUIRED
+                   radians CDATA #REQUIRED>
+
+<!ATTLIST matrix m00 CDATA #REQUIRED
+                 m01 CDATA #REQUIRED
+                 m02 CDATA #REQUIRED
+                 m03 CDATA #REQUIRED
+                 m10 CDATA #REQUIRED
+                 m11 CDATA #REQUIRED
+                 m12 CDATA #REQUIRED
+                 m13 CDATA #REQUIRED
+                 m20 CDATA #REQUIRED
+                 m21 CDATA #REQUIRED
+                 m22 CDATA #REQUIRED
+                 m23 CDATA #REQUIRED
+                 m30 CDATA #REQUIRED
+                 m31 CDATA #REQUIRED
+                 m32 CDATA #REQUIRED
+                 m33 CDATA #REQUIRED>
+
+<!ATTLIST bezier description CDATA #REQUIRED >
+
+<!ATTLIST ponto1    x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST ponto2    x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST ponto3    x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST ponto4    x CDATA #REQUIRED
+                    y CDATA #REQUIRED
+                    z CDATA #REQUIRED >
+
+<!ATTLIST sphere description CDATA #REQUIRED >
+
+<!ATTLIST cylinder description CDATA #REQUIRED >
+
+<!ATTLIST radius value CDATA #REQUIRED >
+
+<!ATTLIST height value CDATA #REQUIRED >
+
+<!ATTLIST material  r CDATA #REQUIRED
+                    g CDATA #REQUIRED
+                    b CDATA #REQUIRED >
+
+<!ATTLIST meshobject filename CDATA #REQUIRED
+                      type CDATA #REQUIRED
+                      description CDATA #REQUIRED>
+
+<!ATTLIST transform description CDATA #REQUIRED>
+
+<!ATTLIST axis  x CDATA #REQUIRED
+                y CDATA #REQUIRED
+                z CDATA #REQUIRED >
+
+<!ATTLIST range min CDATA #REQUIRED
+                max CDATA #REQUIRED >
+
+<!ATTLIST directionallight  description CDATA #REQUIRED>
+
+<!ATTLIST spotlight  description CDATA #REQUIRED>
+
+<!ATTLIST pointlight  description CDATA #REQUIRED>
+
+<!ATTLIST intensity value CDATA #REQUIRED>
+
+<!ATTLIST ambientIntensity value CDATA #REQUIRED>
+
+<!ATTLIST color red CDATA #REQUIRED
+                green CDATA #REQUIRED
+                blue CDATA #REQUIRED
+                alpha CDATA #REQUIRED>
+
+<!ATTLIST enabled value CDATA #REQUIRED>
+
+<!ATTLIST attenuation x CDATA #REQUIRED
+                      y CDATA #REQUIRED
+                      z CDATA #REQUIRED>
+
+<!ATTLIST beam_Width value CDATA #REQUIRED>
+
+<!ATTLIST cut_Off_Angle value CDATA #REQUIRED>

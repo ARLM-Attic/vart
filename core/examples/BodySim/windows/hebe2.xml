@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE vpat SYSTEM "vpat.dtd">
+
+<vpat>
+<body description="John" file_name="john.xml" >
+   <joint description="root" parent="null" type="uniaxial">
+       <dof description="no_move">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <axis x="1.0" y="0.0" z="0.0"/>
+         <range min="0" max="0"/>
+         <comfort_range min="0.0" max="0.0" rest="0.0"/>
+      </dof>
+      <shape description="skull" file_name="cranio.iv">
+         <position x="0.0" y="0.0" z="0.0"/>
+         <iaxis x="1.0" y="0.0" z="0.0"/>
+         <jaxis x="0.0" y="1.0" z="0.0"/>
+         <kaxis x="0.0" y="0.0" z="1.0"/>
+      </shape>
+	  </joint>
+	  <joint description="skull_mandi" parent="root" type="biaxial">
+	   <dof description="flexionK">
+           <position x="0.0" y="0.00" z="0.00"/>
+            <axis x="1.0" y="0.0" z="0.0"/>
+			<range min="-0.01" max="0.3"/>
+		 </dof>	
+	 </joint>	 
+	 <joint description="mandi_skull" parent="skull_mandi" type="biaxial">
+	   <dof description="twistK">
+           <position x="0.0" y="0.00" z="0.00"/>
+            <axis x="0.0" y="1.0" z="0.0"/>
+			<range min="-0.03" max="0.03"/>
+		 </dof>		 
+      <shape description="jaw" file_name="mandibula.iv">
+            <position x="0.0" y="0.00" z="0.00"/>
+            <iaxis x="1.0" y="0.0" z="0.0"/>
+            <jaxis x="0.0" y="1.0" z="0.0"/>
+            <kaxis x="0.0" y="0.0" z="1.0"/>
+         </shape>     
+   </joint>
+  
+   
+</body>
+<movement body_name="john" cycle="on" delta_t="0.01" time_err="0.0001"> 
+<motion joint_name="skull_mandi" t0="-0.01" tf="0.2" type="FLEX" parameter="0.0"/>
+<!--motion joint_name="mandi_skull" t0="0.21" tf="0.3" type="FLEX" parameter="0.0"/-->
+<motion joint_name="skull_mandi" t0="0.21" tf="0.3" type="ADUCT" parameter="0.6"/>
+
+<!--motion joint_name="mandi_skull" t0="0.41" tf="0.50" type="FLEX" parameter="0.6"/-->
+<!--motion joint_name="mandi_skull" t0="0.51" tf="0.60" type="ADUCT" parameter="1.0"/-->
+
+  <!-- set motion -->
+</movement>
+</vpat>

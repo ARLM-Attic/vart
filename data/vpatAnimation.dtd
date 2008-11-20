@@ -1,0 +1,29 @@
+<!ELEMENT action ( joint_movement+ ) >
+
+<!ATTLIST action action_name  CDATA #REQUIRED
+                 speed        CDATA #REQUIRED
+                 cycle        CDATA #REQUIRED>
+
+<!ELEMENT joint_movement (interpolation, dof_movement+)>
+<!ATTLIST joint_movement joint_name     CDATA #REQUIRED
+                         duration       CDATA #REQUIRED>
+
+<!ELEMENT interpolation (overshoot?, offset?)>
+<!ATTLIST interpolation type  CDATA #REQUIRED>
+
+<!ELEMENT overshoot EMPTY>
+<!ATTLIST overshoot value  CDATA #REQUIRED>
+
+<!ELEMENT offset EMPTY>
+<!ATTLIST offset value  CDATA #REQUIRED>
+
+<!ELEMENT dof_movement (noise?)> <!-- several dof_movements for the same dof may exist -->
+<!ATTLIST dof_movement dofID            CDATA #REQUIRED
+                       initialTime      CDATA #REQUIRED
+                       finalTime        CDATA #REQUIRED
+                       finalPosition    CDATA #REQUIRED>
+
+<!ELEMENT noise EMPTY>
+<!ATTLIST noise amplitude  CDATA #REQUIRED
+                length     CDATA #REQUIRED>
+

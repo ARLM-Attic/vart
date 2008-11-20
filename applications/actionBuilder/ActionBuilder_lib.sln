@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C85C68E-FBCC-4D54-BBAF-3885ADDF10D3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActionBuilder_Lib", "ActionBuilder_lib.vcproj", "{973F794E-7FC3-4C65-BED3-35DB5B9523F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{973F794E-7FC3-4C65-BED3-35DB5B9523F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{973F794E-7FC3-4C65-BED3-35DB5B9523F5}.Debug|Win32.Build.0 = Debug|Win32
+		{973F794E-7FC3-4C65-BED3-35DB5B9523F5}.Release|Win32.ActiveCfg = Release|Win32
+		{973F794E-7FC3-4C65-BED3-35DB5B9523F5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

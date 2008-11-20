@@ -1,0 +1,323 @@
+#Inventor V2.1 ascii
+
+Separator {
+    Separator {
+	LightModel {
+	    model	BASE_COLOR
+	}
+	DrawStyle {
+	    lineWidth	2
+	}
+	Coordinate3 {
+	    point	[ 0 0 0,
+			      1 0 0,
+			      0 1 0,
+			      0 0 1 ]
+	}
+	Transform {
+	    translation	-0.360847 0.624995 0.761143
+	    rotation	0 1 0  3.02921
+	    scaleFactor	1.02219 1.02219 1.02219
+	    center	0.5125 0.5125 0.5125
+	}
+	LightModel {
+	    model	PHONG
+	}
+	MaterialBinding {
+	    value	OVERALL
+	}
+	Separator {
+	    BaseColor {
+		rgb	1 0 0
+	    }
+	    Translation {
+		translation	1 0 0
+	    }
+	    RotationXYZ {
+		axis	Z
+		angle	-1.5708
+	    }
+	    Transform {
+		translation	-0.00127447 -0.518644 1.04808
+		center	-1.13971e-10 2.31904e-08 -2.75889e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"X"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 1 0
+	    }
+	    Translation {
+		translation	0 1 0
+	    }
+	    Transform {
+		translation	0.568963 -0.544449 -2.61174e-08
+		center	3.82337e-08 1.23628e-07 -1.77407e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Y"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 0 1
+	    }
+	    Translation {
+		translation	0 0 1
+	    }
+	    RotationXYZ {
+		axis	X
+		angle	1.5708
+	    }
+	    Transform {
+		translation	0.552366 -2.63994e-07 0.438552
+		center	3.92186e-08 -1.01197e-08 -2.46724e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Z"
+	    }
+	}
+    }
+}
+Separator {
+    Separator {
+	LightModel {
+	    model	BASE_COLOR
+	}
+	DrawStyle {
+	    lineWidth	2
+	}
+	Coordinate3 {
+	    point	[ 0 0 0,
+			      1 0 0,
+			      0 1 0,
+			      0 0 1 ]
+	}
+	Transform {
+	    translation	-0.360847 0.624995 0.761143
+	    rotation	0 1 0  3.02921
+	    scaleFactor	1.02219 1.02219 1.02219
+	    center	0.5125 0.5125 0.5125
+	}
+	LightModel {
+	    model	PHONG
+	}
+	MaterialBinding {
+	    value	OVERALL
+	}
+	Separator {
+	    BaseColor {
+		rgb	1 0 0
+	    }
+	    Translation {
+		translation	1 0 0
+	    }
+	    RotationXYZ {
+		axis	Z
+		angle	-1.5708
+	    }
+	    Transform {
+		translation	-0.00127447 -0.518644 1.04808
+		center	-1.13971e-10 2.31904e-08 -2.75889e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"X"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 1 0
+	    }
+	    Translation {
+		translation	0 1 0
+	    }
+	    Transform {
+		translation	0.568963 -0.544449 -2.61174e-08
+		center	3.82337e-08 1.23628e-07 -1.77407e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Y"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 0 1
+	    }
+	    Translation {
+		translation	0 0 1
+	    }
+	    RotationXYZ {
+		axis	X
+		angle	1.5708
+	    }
+	    Transform {
+		translation	0 0 0.17
+		center	3.92186e-08 -1.01197e-08 -2.46724e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Z"
+	    }
+	}
+    }
+}
+Separator {
+    Separator {
+	LightModel {
+	    model	BASE_COLOR
+	}
+	DrawStyle {
+	    lineWidth	2
+	}
+	Coordinate3 {
+	    point	[ 0 0 0,
+			      1 0 0,
+			      0 1 0,
+			      0 0 1 ]
+	}
+	Transform {
+	    translation	-0.360847 0.624995 0.761143
+	    rotation	0 1 0  3.02921
+	    scaleFactor	1.02219 1.02219 1.02219
+	    center	0.5125 0.5125 0.5125
+	}
+	LightModel {
+	    model	PHONG
+	}
+	MaterialBinding {
+	    value	OVERALL
+	}
+	Separator {
+	    BaseColor {
+		rgb	1 0 0
+	    }
+	    Translation {
+		translation	1 0 0
+	    }
+	    RotationXYZ {
+		axis	Z
+		angle	-1.5708
+	    }
+	    Transform {
+		translation	-0.00127447 -0.518644 1.04808
+		center	-1.13971e-10 2.31904e-08 -2.75889e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"X"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 1 0
+	    }
+	    Translation {
+		translation	0 1 0
+	    }
+	    Transform {
+		translation	0.568963 -0.544449 -2.61174e-08
+		center	3.82337e-08 1.23628e-07 -1.77407e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Y"
+	    }
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 0 1
+	    }
+	    Translation {
+		translation	0 0 1
+	    }
+	    RotationXYZ {
+		axis	X
+		angle	1.5708
+	    }
+	    Transform {
+		translation	0.552366 -2.63994e-07 0.438552
+		center	3.92186e-08 -1.01197e-08 -2.46724e-09
+	    }
+	    Translation {
+		translation	0 0.15 0
+	    }
+	    Text2 {
+		string	"Z"
+	    }
+	}
+    }
+}
+Separator {
+    Transform {
+	center	0.728105 0.43985 0.83722
+    }
+    Separator {
+	LightModel {
+	    model	BASE_COLOR
+	}
+	DrawStyle {
+	    lineWidth	2
+	}
+	Coordinate3 {
+	    point	[ 0 0 0,
+			      1 0 0,
+			      0 1 0,
+			      0 0 1 ]
+	}
+	Transform {
+	    translation	-0.360847 0.624995 0.761143
+	    rotation	0 1 0  3.02921
+	    scaleFactor	1.02219 1.02219 1.02219
+	    center	0.5125 0.5125 0.5125
+	}
+	LightModel {
+	    model	PHONG
+	}
+	MaterialBinding {
+	    value	OVERALL
+	}
+	Separator {
+	    BaseColor {
+		rgb	0 0 1
+	    }
+	    Translation {
+		translation	0 0 1
+	    }
+	    RotationXYZ {
+		axis	X
+		angle	1.5708
+	    }
+	    Transform {
+		translation	0 0 0.17
+		center	3.92186e-08 -1.01197e-08 -2.46724e-09
+	    }
+	    Cone {
+		bottomRadius	0.05
+		height	0.15
+	    }
+	}
+    }
+}

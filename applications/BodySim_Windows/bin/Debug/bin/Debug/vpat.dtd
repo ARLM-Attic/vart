@@ -1,0 +1,94 @@
+<!-- DTD for an articulated human body for Project VPat -->
+<!-- Author: Anderson Maciel - Apr 25, 2001 - Jun 13,2001 -->
+
+<!ELEMENT vpat ( body+, movement* )>
+
+<!ELEMENT body ( joint+ )>
+
+<!ELEMENT joint ( dof*, shape* )>
+
+<!ELEMENT dof ( position, axis, range, comfort_range?, evoluta?, modifier? )>
+
+<!ELEMENT shape ( position, iaxis, jaxis, kaxis )>
+
+<!ELEMENT position EMPTY>
+
+<!ELEMENT axis EMPTY>
+
+<!ELEMENT iaxis EMPTY>
+<!ELEMENT jaxis EMPTY>
+<!ELEMENT kaxis EMPTY>
+
+<!ELEMENT range EMPTY>
+
+<!ELEMENT comfort_range EMPTY>
+
+<!ELEMENT evoluta ( ctrl_point* )>
+
+<!ELEMENT ctrl_point EMPTY>
+
+<!ATTLIST body description CDATA #REQUIRED
+							 file_name CDATA "">
+							
+<!ATTLIST joint description CDATA #REQUIRED
+								parent			CDATA #REQUIRED
+								type 				( uniaxial|biaxial|polyaxial|plane ) #REQUIRED >
+
+<!ATTLIST dof description CDATA #REQUIRED >
+
+<!ATTLIST shape description CDATA #REQUIRED
+							  file_name CDATA #REQUIRED >
+
+<!ATTLIST position x CDATA #REQUIRED
+							  	 y CDATA #REQUIRED
+							  	 z CDATA #REQUIRED >
+							  	
+<!ATTLIST ctrl_point	x		CDATA #REQUIRED
+							  	 		y		CDATA #REQUIRED
+							  	 		z 	CDATA #REQUIRED >
+							  	
+<!ATTLIST axis x CDATA #REQUIRED
+							 y CDATA #REQUIRED
+							 z CDATA #REQUIRED >
+							
+<!ATTLIST iaxis x CDATA #REQUIRED
+							  y CDATA #REQUIRED
+							  z CDATA #REQUIRED >
+
+<!ATTLIST jaxis x CDATA #REQUIRED
+							  y CDATA #REQUIRED
+							  z CDATA #REQUIRED >
+							
+<!ATTLIST kaxis x CDATA #REQUIRED
+							  y CDATA #REQUIRED
+							  z CDATA #REQUIRED >
+							
+<!ATTLIST range min CDATA #REQUIRED
+							  max CDATA #REQUIRED >
+
+<!ATTLIST comfort_range min 	CDATA #REQUIRED
+							  				max		CDATA #REQUIRED
+							  				rest	CDATA #REQUIRED >
+
+<!ELEMENT modifier ( relation+ )>
+
+<!ELEMENT relation ( ctrl_point, ctrl_point, ctrl_point, ctrl_point,
+										 ctrl_point, ctrl_point, ctrl_point, ctrl_point  )>
+
+<!ATTLIST relation dof CDATA #REQUIRED >
+
+<!ELEMENT movement ( motion* ) >
+
+<!ATTLIST movement body_name  CDATA #REQUIRED
+                   cycle      CDATA #REQUIRED
+                   delta_t    CDATA #REQUIRED
+                   time_err   CDATA #REQUIRED >
+
+<!ELEMENT motion EMPTY>
+
+<!ATTLIST motion joint_name   CDATA #REQUIRED
+                 t0           CDATA #REQUIRED
+                 tf           CDATA #REQUIRED
+                 type         CDATA #REQUIRED
+                 parameter    CDATA #REQUIRED
+                 interpolation  CDATA "" >

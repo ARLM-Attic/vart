@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE action SYSTEM "vpatAnimation.dtd">
+<action action_name="copRest" speed="1.0000" cycle="false">
+ <joint_movement joint_name="hipJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_thighJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.7512"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.4023"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_legJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.0000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_footJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.3359"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="bellyJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="chestJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.3300"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="headJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.3300"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="headJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.3300"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_armJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6200"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.2700"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_forearmJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.8600"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_handJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.4000"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_handJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.4000"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_armJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6200"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.7300"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_forearmJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.8600"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="R_handJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.4000"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_thighJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.7500"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.6000"/>
+  <dof_movement dofID="TWIST" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_legJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.0000"/>
+ </joint_movement>
+ <joint_movement joint_name="L_footJoint" duration="3.0000" interpolation="ease-in_ease-out">
+  <dof_movement dofID="FLEX" initialTime="0.0000" finalTime="1.0000" finalPosition="0.3300"/>
+  <dof_movement dofID="ADDUCT" initialTime="0.0000" finalTime="1.0000" finalPosition="0.5000"/>
+ </joint_movement>
+</action>

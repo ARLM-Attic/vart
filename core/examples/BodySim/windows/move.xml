@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE vpat SYSTEM "vpat.dtd">
+
+<vpat>
+  <body>
+    <joint>
+    </joint>
+  </body>
+  <movement body_name="john" cycle="off" delta_t="0.05" time_err="0.0001">
+    <motion joint_name="root" t0="0.0" tf="1.0" type="FLEX" parameter="0.0">
+    <motion joint_name="root" t0="7.0" tf="10.0" type="FLEX" parameter="1.0">
+    <motion joint_name="knee" t0="2.0" tf="3.0" type="FLEX" parameter="0.0">
+    <motion joint_name="knee" t0="3.1" tf="5.5" type="FLEX" parameter="1.0">
+    <motion joint_name="knee" t0="5.6" tf="10.0" type="FLEX" parameter="0.0">
+    <motion joint_name="ankle" t0="1.0" tf="1.5" type="TWIST" parameter="1.0">
+    <motion joint_name="ankle" t0="1.6" tf="2.0" type="TWIST" parameter="0.0">
+  </movement>
+</vpat>

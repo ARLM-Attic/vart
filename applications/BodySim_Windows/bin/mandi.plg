@@ -1,0 +1,131 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mandi - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Thales\CONFIG~1\Temp\RSP10.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /I "c:\vpat\joints2" /I "c:\\" /I "c:\xercesc\\" /I "c:\xercesc\dom" /I "c:\inventor\build\inventor\libsoxt\include" /I "c:\inventor\install\include\\" /I "c:\inventor\install\include\inventor" /I "c:\qt\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /D "SOQT_DLL" /D "COIN_NOT_DLL" /D "DQT_DLL" /D "QT_DLL" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\vpat\joints2\vpbezier.cpp"
+"C:\vpat\joints2\vpbiaxialjoint.cpp"
+"C:\vpat\joints2\vpbody.cpp"
+"C:\vpat\joints2\vpcamera.cpp"
+"C:\vpat\joints2\vpcolor.cpp"
+"C:\vpat\joints2\vpcurve.cpp"
+"C:\vpat\joints2\vpcylinder.cpp"
+"C:\vpat\joints2\vpdirectionallight.cpp"
+"C:\vpat\joints2\vpdof.cpp"
+"C:\vpat\joints2\vpedge.cpp"
+"C:\vpat\joints2\vpgraphicobj.cpp"
+"C:\vpat\joints2\vpinventorview.cpp"
+"C:\vpat\joints2\vpjoint.cpp"
+"C:\vpat\joints2\vpjointmotion.cpp"
+"C:\vpat\joints2\vpjointsimulator.cpp"
+"C:\vpat\joints2\vplight.cpp"
+"C:\vpat\joints2\vpmatrix.cpp"
+"C:\vpat\joints2\vpmodifier.cpp"
+"C:\vpat\joints2\vpmovement.cpp"
+"C:\vpat\joints2\vpplanejoint.cpp"
+"C:\vpat\joints2\vppoint2d.cpp"
+"C:\vpat\joints2\vppoint3d.cpp"
+"C:\vpat\joints2\vppointlight.cpp"
+"C:\vpat\joints2\vppolyaxialjoint.cpp"
+"C:\vpat\joints2\vpscene.cpp"
+"C:\vpat\joints2\vpsphere.cpp"
+"C:\vpat\joints2\vpspotlight.cpp"
+"C:\vpat\joints2\vpuniaxialjoint.cpp"
+"C:\vpat\joints2\vpvector3d.cpp"
+"C:\vpat\joints2\vpview.cpp"
+"C:\vpat\joints2\vpxml.cpp"
+"C:\vpat\joints2\vpvertex3d.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Thales\CONFIG~1\Temp\RSP10.tmp" 
+Creating temporary file "C:\DOCUME~1\Thales\CONFIG~1\Temp\RSP11.tmp" with contents
+[
+inventor.lib xerces-c_2.lib qutil.lib qtmain.lib qt-mt230nc.lib soqt.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/mandi.pdb" /debug /machine:I386 /out:"Debug/mandi.exe" /pdbtype:sept /libpath:"c:\inventor\install\lib" /libpath:"C:\xerces-c2_4_0-windows_nt-msvc_60\lib" /libpath:"c:\coin3d\lib" /libpath:"C:\Qt\lib" /libpath:"C:\inventor\install\lib" 
+.\Debug\vpbezier.obj
+.\Debug\vpbiaxialjoint.obj
+.\Debug\vpbody.obj
+.\Debug\vpcamera.obj
+.\Debug\vpcolor.obj
+.\Debug\vpcurve.obj
+.\Debug\vpcylinder.obj
+.\Debug\vpdirectionallight.obj
+.\Debug\vpdof.obj
+.\Debug\vpedge.obj
+.\Debug\vpgraphicobj.obj
+.\Debug\vpinventorview.obj
+.\Debug\vpjoint.obj
+.\Debug\vpjointmotion.obj
+.\Debug\vpjointsimulator.obj
+.\Debug\vplight.obj
+.\Debug\vpmatrix.obj
+.\Debug\vpmodifier.obj
+.\Debug\vpmovement.obj
+.\Debug\vpplanejoint.obj
+.\Debug\vppoint2d.obj
+.\Debug\vppoint3d.obj
+.\Debug\vppointlight.obj
+.\Debug\vppolyaxialjoint.obj
+.\Debug\vpscene.obj
+.\Debug\vpsphere.obj
+.\Debug\vpspotlight.obj
+.\Debug\vpuniaxialjoint.obj
+.\Debug\vpvector3d.obj
+.\Debug\vpview.obj
+.\Debug\vpxml.obj
+.\Debug\vpvertex3d.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Thales\CONFIG~1\Temp\RSP11.tmp"
+<h3>Output Window</h3>
+Compiling...
+vpbezier.cpp
+vpbiaxialjoint.cpp
+vpbody.cpp
+vpcamera.cpp
+vpcolor.cpp
+vpcurve.cpp
+vpcylinder.cpp
+vpdirectionallight.cpp
+vpdof.cpp
+vpedge.cpp
+vpgraphicobj.cpp
+vpinventorview.cpp
+vpjoint.cpp
+vpjointmotion.cpp
+vpjointsimulator.cpp
+vplight.cpp
+vpmatrix.cpp
+vpmodifier.cpp
+vpmovement.cpp
+c:\vpat\joints2\vpmovement.cpp(28) : warning C4305: '=' : truncation from 'const double' to 'float'
+c:\vpat\joints2\vpmovement.cpp(36) : warning C4305: '=' : truncation from 'const double' to 'float'
+vpplanejoint.cpp
+Generating Code...
+Compiling...
+vppoint2d.cpp
+vppoint3d.cpp
+vppointlight.cpp
+vppolyaxialjoint.cpp
+vpscene.cpp
+vpsphere.cpp
+vpspotlight.cpp
+vpuniaxialjoint.cpp
+vpvector3d.cpp
+vpview.cpp
+vpxml.cpp
+c:\vpat\joints2\vpxml.cpp(318) : warning C4101: 'desct' : unreferenced local variable
+vpvertex3d.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+mandi.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

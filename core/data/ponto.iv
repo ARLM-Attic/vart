@@ -1,0 +1,20 @@
+#Inventor V2.1 ascii
+
+Separator {
+    Transform {
+	translation	76.1155 154.138 -91.8207
+	rotation	0 0 1  0
+	scaleFactor	8 8 8
+	scaleOrientation	-1.36282e-08 -3.06269e-09 1  4.71239
+    }
+    Material {
+	ambientColor	0.2 0.2 0.2 ~
+	diffuseColor	0.751628 0.8 0.389365
+	specularColor	0 0 0 ~
+	emissiveColor	0 0 0 ~
+	shininess	0.2 ~
+	transparency	0 ~
+    }
+    Sphere {
+    }
+}
